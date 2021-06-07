@@ -1,13 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-function About() {
-    return (
-       <Fragment>
-         <h1>
-             About page
-         </h1>
-       </Fragment>
-    )
-}
-
-export default About
+export const About = () => (
+  <div class="jumbotron ">
+  <div class="container">
+    <h1 class="display-4">Best React app</h1>
+    <p class="lead">Version <strong>1.0.24</strong></p>
+  </div>
+</div>
+)
