@@ -1,12 +1,14 @@
 import React from 'react'
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
+
+
 export const Notes = ({notes, onRemove}) => (
   <TransitionGroup component="ul" className="list-group">
     {notes.map(note => (
       <CSSTransition
         key={note.id}
-        classNames={'note'}
+        classNames="note"
         timeout={800}
       >
         <li className="list-group-item note">
